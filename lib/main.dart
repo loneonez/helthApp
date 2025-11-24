@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:helthapp/features/dashboard/presentation/chat_screen.dart';
 import 'package:helthapp/features/dashboard/presentation/dashboard_screen.dart';
-import 'package:helthapp/screens/home_screen.dart';
+import 'package:helthapp/screens/splash_screen.dart';
 
 // ----------------------------------------
 // 仮のホーム画面 (この画面へ遷移します)
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       // デフォルトのテーマカラーなど
       theme: ThemeData(primarySwatch: Colors.blue),
       // 起動時にまずこの画面を表示する
-      home: const DashboardScreen(),
+      home: SplashScreen(),
     );
   }
 }
@@ -58,7 +58,7 @@ class _SimpleSplashScreenState extends State<SimpleSplashScreen> {
     // 遷移処理: 現在の画面を置き換える（戻れないようにする）
     if (mounted) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => DashboardScreen()),
       );
     }
   }

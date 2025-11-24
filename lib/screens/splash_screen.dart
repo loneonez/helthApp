@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helthapp/screens/home_screen.dart';
+import 'package:helthapp/features/dashboard/presentation/dashboard_screen.dart';
+
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     if (mounted) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => const DashboardScreen()),
       );
     }
   }

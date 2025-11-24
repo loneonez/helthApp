@@ -23,6 +23,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_native_splash: ^2.4.7
+  google_generative_ai: ^0.4.7
 
 
   flutter_lints: ^5.0.0
